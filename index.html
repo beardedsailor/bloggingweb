@@ -1,0 +1,393 @@
+<html>
+  <head>
+    <title>
+      My Website
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <!-- jQuery library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+
+      .topnav a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #555;
+        color: white;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .bg {
+        background-image: url("background.jpg");
+        height: 100%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        position: relative;
+
+        width: auto;
+        margin-left: 800px;
+      }
+
+      .topnav {
+        overflow: hidden;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        color: whitesmoke;
+      }
+      .text-block {
+        color: white;
+        font-size: 40px;
+        margin-top: 350px;
+        margin-left: 400px;
+      }
+      #footer {
+        background-color: ;
+      }
+      form {
+        position: relative;
+      }
+
+      input {
+        width: 320px;
+        text-align: center;
+
+        margin-left: 500px;
+        border-radius: 10px;
+      }
+
+      button {
+        width: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 500px;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        $("#alertMessage1").delay(1000).fadeOut();
+        $("#alertMessage2").delay(1000).fadeIn();
+        $("#alertMessage2").delay(1000).fadeOut();
+        $("#alertMessage1").delay(1000).fadeIn();
+        $("#alertMessage1").delay(1000).fadeOut();
+        $("#alertMessage2").delay(1000).fadeIn();
+        $("#alertMessage2").delay(1000).fadeOut();
+        $("#alertMessage1").delay(1000).fadeIn();
+        
+      });
+    </script>
+    <div id="container-fluid">
+      <div class="bg" id="home">
+        <div class="bg-img">
+          <div class="container">
+            <div class="topnav">
+              <a href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+              <a href="#Topics">Topics</a>
+
+              <a href="#Trending">Trending</a>
+              <a href="#about">About</a>
+              <a href="#profile"><i class="fa fa-fw fa-user"></i> Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-block" id="alertMessage1">
+          <h2 style="font-size: 70px;">Technology</h2>
+          <p>&nbsp; &nbsp;&nbsp; &nbsp; We have to understand and use this</p>
+        </div>
+        <div class="text-block" id="alertMessage2">
+          <h2 style="font-size: 70px;">Inventions</h2>
+          <p>&nbsp; &nbsp;&nbsp; &nbsp; We have to understand and use this</p>
+        </div>
+      </div>
+
+      <div class="row" id="Topics">
+        <div class="col-lg-4">
+          <img
+            class="rounded-circle"
+            src="iot.jpg"
+            alt="Card image"
+            style="
+              width: 300px;
+              height: 250px;
+              margin-top: 50px;
+              margin-right: 0px;
+              margin-bottom: 50px;
+              margin-left: 100px;
+            "
+          />
+        </div>
+        <div class="col-lg-8">
+          <br />
+          <p
+            style="
+              font-size: x-large;
+              font-weight: bold;
+              margin-top: 40px;
+              padding-left: 10px;
+              padding-right: 20px;
+              margin-right: 20px;
+              text-align: center;
+            "
+          >
+           <img src="i1.png" width="30px"> <a href="iot.html">Internet of Things</a>
+          </p>
+          <br />
+          <p
+            style="
+              padding-left: 10px;
+              padding-top: 0px;
+              font-size: medium;
+              font-weight: 500;
+              float: right;
+              text-align: justify;
+              text-justify: inter-word;
+            padding-right: 50px;
+            "
+          >
+            Internet of things, As you already had heard about this thing. In
+            today’s world mostly every problem’s solution is given by this. In
+            simple words, the Internet of Things is a network of
+            internet-connected objects able to collect and exchange data. The
+            word IoT has two main parts; the Internet being the backbone of
+            connectivity and Things means objects it enables us to gather data
+            from objects through sensors, control them through the actuator.
+            <a href="iot.html">Read more >></a>
+          </p>
+        </div>
+      </div>
+      <div class="row" id="Topics">
+        <div class="col-lg-8">
+          <br />
+          <p
+            style="
+              font-size: x-large;
+              font-weight: bold;
+              margin-top: 40px;
+              padding-left: 10px;
+              padding-right: 20px;
+              margin-right: 20px;
+              text-align: center;
+            "
+          >
+          <img src="chip.png" width="30px"><a href="ai.html"> Artificial intelligence(AI)</a>
+          </p>
+          <br />
+          <p
+            style="
+              padding-left: 50px;
+              padding-top: 0px;
+              font-size: medium;
+              font-weight: 500;
+              float: right;
+              text-align: justify;
+              text-justify: inter-word;
+            "
+          >
+            By Name it is clear that this is somewhat called intelligence
+            exhibited by hardware etc(machines). Machines in their environment
+            are able to solve the problems or goals successfully. There are lots
+            of application of AI in our day to day life. As we want more
+            convinence like we want to search something on google,youtube etc by
+            speaking some words the application nowdays help you with that this
+            is feature of speech recognition by computer. other important thing
+            that we interact with different types of machines like computer,
+            mobiles, etc.
+            <a href="ai.html">Read more >></a>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            class="rounded-circle"
+            src="ai.jpg"
+            alt="Card image"
+            style="
+              width: 300px;
+              height: 250px;
+              margin-top: 50px;
+              margin-right: 0px;
+              margin-bottom: 50px;
+              margin-left: 50px;
+            "
+          />
+        </div>
+      </div>
+
+      <div class="container-fluid" id="about">
+        <p
+          style="
+            font-size: x-large;
+            font-weight: bolder;
+            text-align: center;
+            padding-top: 20px;
+          "
+        >
+          About Us
+        </p>
+        <hr />
+        <p
+          class="py-5 text-center"
+          style="font-size: medium; font-weight: bold;"
+        >
+          We are people who want to help everyone in problem comes in the path
+          in different technology.<br />
+          With enhancement in technology our society convienence is incresing
+          day by day.<br />Engineers working hard to help the society and help
+          people in different fields<br />
+        </p>
+      </div>
+      <hr />
+      <div class="container-fluid">
+        <p
+          style="text-align: center; font-size: x-large; font-weight: bolder;"
+          id="profile"
+        >
+          Profile
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              class="rounded-circle"
+              src="card.jpg"
+              alt="Card image"
+              style="
+                width: 500px;
+                padding-top: 50px;
+                padding-right: 0px;
+                padding-bottom: 50px;
+                padding-left: 150px;
+              "
+            />
+          </div>
+          <div class="col-lg-6">
+            <p
+              style="
+                text-align: center;
+                padding-left: 0px;
+                padding-top: 130px;
+                font-size: medium;
+                font-weight: 900;
+              "
+            >
+              I'm geek loves to code on this planet where people only want
+              success.<br />
+              I also want success in my life and that's why I trying my best to
+              achieve that.<br />
+              I currently pursuing B.E from Chitkara University.
+            </p>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div
+        class="container-fluid"
+        id="footer"
+        style="height: 350px; background-color: rgb(213, 213, 226);"
+      >
+        <p
+          style="
+            font-size: 30px;
+            font-weight: 300;
+            font-style: normal;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 80px;
+          "
+        >
+          Let's Connect
+        </p>
+        <p style="font: 100; text-align: center; padding-top: 10px;">
+          Get our Latest Newsletter to your newsfeed
+        </p>
+        <form method="post" action="">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+          />
+          <button type="button">Join</button>
+        </form>
+        <br />
+        <div>
+          <a href="focebook.com"
+            ><img
+              src="facebook.png"
+              width="40px"
+              style="margin-left: 570px; margin-right: 10px;"
+          /></a>
+          <a href="instagram.com"
+            ><img
+              src="instagram.png"
+              width="40px"
+              style="margin-left: 10px; margin-right: 10px;"
+          /></a>
+          <a href="https://github.com/beardedsailor"
+            ><img
+              src="github.svg"
+              width="40px"
+              style="margin-left: 10px; margin-right: 10px;"
+          /></a>
+        </div>
+        <p
+          style="
+            text-align: right;
+            font-size: medium;
+            margin-top: 50px;
+            margin-right: 50px;
+          "
+        >
+          Designed by Raghav Kapoor
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
