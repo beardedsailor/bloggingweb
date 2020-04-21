@@ -3,10 +3,13 @@
     <title>
       My Website
     </title>
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+
     <!-- jQuery library -->
     <link
       rel="stylesheet"
@@ -19,11 +22,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
+      div.disabled {
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
       body,
       html {
         height: 100%;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
       .topnav a:hover,
       .dropdown:hover .dropbtn {
         background-color: #555;
@@ -43,9 +59,10 @@
         background-image: url("background.jpg");
         height: 100%;
 
-        background-position: center;
+        background-position: initial;
         background-repeat: no-repeat;
         background-size: cover;
+        box-sizing: border-box;
       }
 
       body {
@@ -112,6 +129,21 @@
     </style>
   </head>
   <body>
+    <script
+      type="text/javascript"
+      src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+      data-dojo-config="usePlainJson: true, isDebug: false"
+    ></script>
+    <script type="text/javascript">
+      window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
+        L.start({
+          baseUrl: "mc.us4.list-manage.com",
+          uuid: "fdad445e1a267764f5dfea415",
+          lid: "bdf2d81020",
+          uniqueMethods: true,
+        });
+      });
+    </script>
     <script>
       $(function () {
         $("#alertMessage1").delay(1000).fadeOut();
@@ -122,7 +154,6 @@
         $("#alertMessage2").delay(1000).fadeIn();
         $("#alertMessage2").delay(1000).fadeOut();
         $("#alertMessage1").delay(1000).fadeIn();
-        
       });
     </script>
     <div id="container-fluid">
@@ -178,7 +209,8 @@
               text-align: center;
             "
           >
-           <img src="i1.png" width="30px"> <a href="iot.html">Internet of Things</a>
+            <img src="i1.png" width="30px" />
+            <a href="iot.html">Internet of Things</a>
           </p>
           <br />
           <p
@@ -190,7 +222,7 @@
               float: right;
               text-align: justify;
               text-justify: inter-word;
-            padding-right: 50px;
+              padding-right: 50px;
             "
           >
             Internet of things, As you already had heard about this thing. In
@@ -218,7 +250,9 @@
               text-align: center;
             "
           >
-          <img src="chip.png" width="30px"><a href="ai.html"> Artificial intelligence(AI)</a>
+            <img src="chip.png" width="30px" /><a href="ai.html">
+              Artificial intelligence(AI)</a
+            >
           </p>
           <br />
           <p
@@ -347,14 +381,15 @@
         <p style="font: 100; text-align: center; padding-top: 10px;">
           Get our Latest Newsletter to your newsfeed
         </p>
-        <form method="post" action="">
+        <form method="post" action="insert.php">
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email address"
+            required
           />
-          <button type="button">Join</button>
+          <button type="submit">Join</button>
         </form>
         <br />
         <div>
